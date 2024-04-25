@@ -13,7 +13,7 @@ format:
 ##  {#workforce-presentation data-menu-title="Workforce Presentation"}
 ![](images/art.png){.absolute left=0px top=0px}
 
-[What Should Workforce and HR Directors Know?]{.title} [Lindsay Jorgenson & Miriam Naiman-Sessions]{.subtitle} [*Findings from the Profile <br> April 2024*]{.subtitle-sm}
+[What Should Workforce and HR Leaders Know?]{.title} [Lindsay Jorgenson & Miriam Naiman-Sessions]{.subtitle} [*Findings from the Profile <br> April 2024*]{.subtitle-sm}
 
 <!-- Insert R Scripts -->
 
