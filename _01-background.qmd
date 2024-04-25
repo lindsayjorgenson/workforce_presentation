@@ -1,5 +1,10 @@
 # Background
 
+##  {#profile-about-us data-menu-title="Research and Business Intelligence"}
+
+[**Background** \| Who Are We?]{.slide-header}
+<br><br><br>
+![](images/us.png){}
 
 <!-- What is the Profile? -->
 
