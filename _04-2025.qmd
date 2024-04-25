@@ -1,0 +1,23 @@
+# 2025 Profile Fielding
+
+##  {#2025-goals data-menu-title="Goals for 2025"}
+
+[**2025 Profile** \| Goals]{.slide-header} <br><br><br>
+
+::: {.absolute left=100px width="90%" style="color: #1b5380; font-size: .9em;"}
+-   Reduction of survey burden for those S/THA staff reporting on the workforce
+-   Harmonization with other PH Workforce data collections (PH WINS, NACCHO)
+-   Collect data that is both needed and used by ASTHO members and PH stakeholders
+-   Explore the feasibility and benefit of an annual fielding
+:::
+
+##  {#2025-feedback data-menu-title="Feedback"}
+
+[**2025 Profile** \| Feedback]{.slide-header} <br><br><br>
+
+::: {.absolute left=100px width="90%" style="color: #1b5380; font-size: .9em;"}
+-   What “hot topics” are emerging in your work?
+-   What information would help you locate and connect with peers?
+-   What information would support your work?
+-   What information do you think would be impactful to share with decision-makers?
+:::

@@ -1,0 +1,326 @@
+# Profile Findings
+
+
+
+##  {#profile-findings-classification data-menu-title="Classification Affects Workforce Size"}
+[**Profile Findings** | Classification]{.slide-header}
+
+<br><br><br>
+
+::::{.columns}
+
+:::{.column width="3%"}
+:::
+
+:::{.column width="92%"}
+:::{style="padding-right: 770px;"}
+[Governance classification affects workforce size.]{.text-left-bg}
+<br>
+[In centralized agencies, employees who work at a local or regional health departments are employees of the state health agency. As a result, workforce size is generally greater in centralized agencies.]{.text-left}
+:::
+
+
+::: {.absolute left=500 top=100}
+```{r}
+bubble_hc
+```
+:::
+:::
+
+:::{.column width="5%"}
+:::
+
+::::
+
+
+
+##  {#profile-findings-size data-menu-title="Trends in Workforce Size"}
+[**Profile Findings** | Workforce Size]{.slide-header}
+
+<br><br><br>
+
+::::{.columns}
+:::{.column width="3%"}
+:::
+:::{.column width="92%"}
+:::{style="padding-right: 770px;"}
+[Agencies reported a 1.1% increase in non-temporary employees.]{.text-left-bg}
+<br>
+[In 2022, there were just over 75,000 state health employees working in 48 states (not all of these worked at a state central office).]{.text-left}
+:::
+
+::: {.absolute left=500 top=100}
+```{r}
+create_line(
+  group = 0, 
+  data = total_emp, 
+  my_colors = main_colors, 
+  y_text = "Employees per 100,000",
+  subtitle_text = "2019 and 2022", 
+  title_text = paste("Employees per 100,000 Population"),
+  caption_text = paste("<b>Source:</b> Association of State and Territorial Health Officials (ASTHO) Profile of State and Territorial Public Health Survey. <br>
+<b>Notes:</b> 
+(1) Data represent the number of employees at a point-in-time during survey fielding. 
+(2) This measure does not include temporary and contract workers and does not include vacant positions.
+(3) Use caution when interpreting multi-year trends, as organizational structure, reporting methods, and/or COVID-19 may impact values across years. 
+(4) Data include local health agency staff only if they are employees of the state health agency (centralized agencies).
+(5)  Currently, this figure represents only data of responding agencies at each timepoint (see tooltip)."),
+  my_tooltip = paste("{point.JurisdictionName}<br>
+--------------<br>
+<b>Employees Per 100,000:</b>   {point.value}<br>
+<b>Total Employees:</b>   {point.employeeTotalCom}<br>
+<b>Agencies Reporting at Timepoint:</b>  {point.totalN}"),
+  )
+```
+:::
+:::
+:::{.column width="5%"}
+:::
+::::
+
+
+
+##  {#profile-findings-vacancy-2 data-menu-title="Trends in Vacancy"}
+[**Profile Findings** | Vacancy]{.slide-header}
+
+<br><br><br>
+
+::::{.columns}
+:::{.column width="3%"}
+:::
+:::{.column width="92%"}
+:::{style="padding-right: 770px;"}
+[An average of 11.4% of positions are vacant across all agencies.]{.text-left-bg}
+<br>
+[The rate of vacancies in 2022 is double the 2016 rate. Additional research finds that over a third of state health agency employees separated from their employment between 2017 and 2021.<sup>1</sup>]{.text-left}
+:::
+
+::: {.absolute left=500 top=100}
+```{r}
+vacant_line
+```
+:::
+:::
+:::{.column width="5%"}
+:::
+::::
+
+
+
+
+##  {#profile-findings-vacancy data-menu-title="Growth of Vacant Positions"}
+[**Profile Findings** | Vacancy]{.slide-header}
+
+<br><br><br>
+
+::::{.columns}
+:::{.column width="3%"}
+:::
+:::{.column width="92%"}
+:::{style="padding-right: 770px;"}
+[Vacancy increased in 31 agencies from 2019 to 2022.]{.text-left-bg}
+<br>
+[While we do not know what exactly drove increases in vacancy, it should not be assumed that an increase is "bad."
+It could be that new positions were being posted but not yet filled at the time of survey collection.]{.text-left}
+:::
+
+::: {.absolute left=500 top=100}
+```{r}
+create_map(
+  data = vacant_change, 
+  data_class = vac_data_class,
+  my_value = "vacant_change",
+  title_text = "State Health Agencies' Change in Vacancy",
+  subtitle_text = "From 2019 to 2022",
+  caption_text = HTML("<b>Source:</b> Association of State and Territorial 
+Health Officials (ASTHO) Profile of State and Territorial Public Health Survey. 
+<br>
+<b> Notes: </b>
+    (1) Vacant percent is not displayed for 2016 due to a change in how the percentage is calculated.
+    (2) Vacant positions are defined as positions that have been recruited and positions in the process of onboarding.
+    Vacancy counts do not include positions that are required to be left vacant."),
+    my_tooltip = HTML("{point.JurisdictionName}<br>
+                          <b>Change in Vacancy:</b> {point.value}"),
+  my_colors = c(NA_color, light_blue, main_orange)
+)
+```
+:::
+:::
+:::{.column width="5%"}
+:::
+::::
+
+
+
+##  {#profile-findings-temporary data-menu-title="Trends in Temporary Workers"}
+[**Profile Findings** | Temps]{.slide-header}
+
+<br><br><br>
+
+::::{.columns}
+:::{.column width="3%"}
+:::
+:::{.column width="92%"}
+:::{style="padding-right: 770px;"}
+[The use of temporary and contract workers grew 38.9% from 2019 to 2022.]{.text-left-bg}
+<br>
+[In other words, public health agencies are relying on more temporary or contract workers (TWs) within their workforce than they have in the past.]{.text-left}
+:::
+
+::: {.absolute left=500 top=100}
+```{r}
+temp
+```
+:::
+:::
+:::{.column width="5%"}
+:::
+::::
+
+
+
+##  {#profile-findings-temporary-2 data-menu-title="Temporary to Non-Temporary"}
+[**Profile Findings** | Temps]{.slide-header}
+
+<br><br><br>
+
+::::{.columns}
+:::{.column width="3%"}
+:::
+:::{.column width="92%"}
+:::{style="padding-right: 770px;"}
+[In 2022, there were 2.2 TWs to every 10 non-TWs.]{.text-left-bg}
+<br>
+[The ratio of TWs to non-TWs workers ranged from as low as 1 TWs to every 100 non-TWs all the way to 167 TWs to every 100 NTWs.]{.text-left}
+:::
+
+::: {.absolute left=540 top=90}
+![](images/temp.png){fig-alt="icons of people expressing 2.2 temporary workers to 10 non-temporary workers." width=95%}
+:::
+:::
+:::{.column width="5%"}
+:::
+::::
+
+
+
+
+
+##  {#profile-findings-hr data-menu-title="Oversight of HR"}
+[**Profile Findings** | Structure]{.slide-header}
+
+<br><br><br>
+
+::::{.columns}
+:::{.column width="3%"}
+:::
+:::{.column width="92%"}
+:::{style="padding-right: 770px;"}
+[Only 58% of public health agencies oversee human resources.]{.text-left-bg}
+<br>
+[Of those that do not oversee human resources, it is typically the umbrella agency for agencies that are structured within an umbrella.]{.text-left}
+:::
+
+::: {.absolute left=500 top=100}
+```{r}
+create_map(
+  data = hr_map, 
+  data_class = hr_map_data_class,
+  my_type = "c",
+  my_value = "selected_value",
+  title_text = "Entity that Oversaw Human Resources",
+  subtitle_text = "2022",
+  caption_text = HTML("<b>Source:</b> Association of State and Territorial Health Officials (ASTHO) Profile of State and Territorial Public Health Survey.<br> 
+                            <b>Note:</b> For public health departments under a larger umbrella agency, respondents were asked to answer for the public health division/department. 
+                            *Alone or in combination with another agency."),
+  my_tooltip = HTML("{point.JurisdictionName}<br>
+                          <b>Area/Function:</b> {point.cat}<br>
+                          <b>Entity with Oversight:</b> {point.value}<br>
+                          <b>Classification:</b> {point.governance}<br>
+                          <b>Structure:</b> {point.structure}"),
+  my_colors = hr_map_colors,
+  my_reverse = FALSE
+)
+```
+:::
+:::
+:::{.column width="5%"}
+:::
+::::
+
+
+
+
+##  {#profile-findings-wd data-menu-title="Oversight of Workforce Development"}
+[**Profile Findings** | Structure]{.slide-header}
+
+<br><br><br>
+
+::::{.columns}
+:::{.column width="3%"}
+:::
+:::{.column width="92%"}
+:::{style="padding-right: 770px;"}
+[Most agencies - 90% - oversee workforce development.]{.text-left-bg}
+<br>
+[Three of the four agencies that do not oversee workforce development
+share a centralized governance classification; two are under an umbrella 
+and two are freestanding.]{.text-left}
+:::
+
+::: {.absolute left=500 top=100}
+```{r}
+create_map(
+  data = wrk_map, 
+  data_class = wrk_map_data_class,
+  my_type = "c",
+  my_value = "selected_value",
+  title_text = "Entity that Oversaw Workforce Development",
+  subtitle_text = "2022",
+  caption_text = HTML("<b>Source:</b> Association of State and Territorial Health Officials (ASTHO) Profile of State and Territorial Public Health Survey.<br> 
+                            <b>Note:</b> For public health departments under a larger umbrella agency, respondents were asked to answer for the public health division/department. 
+                            *Alone or in combination with another agency."),
+  my_tooltip = HTML("{point.JurisdictionName}<br>
+                          <b>Area/Function:</b> {point.cat}<br>
+                          <b>Entity with Oversight:</b> {point.value}<br>
+                          <b>Classification:</b> {point.governance}<br>
+                          <b>Structure:</b> {point.structure}"),
+  my_colors = wrk_map_colors,
+  my_reverse = FALSE
+)
+```
+:::
+:::
+:::{.column width="5%"}
+:::
+::::
+
+
+
+
+##  {#profile-findings-hr-functions data-menu-title="Human Resource Functions"}
+[**Profile Findings** | Structure]{.slide-header}
+
+<br><br><br>
+
+::::{.columns}
+:::{.column width="3%"}
+:::
+:::{.column width="92%"}
+:::{style="padding-right: 770px;"}
+[There is significant variability in the oversight of HR functions across jurisdictions.]{.text-left-bg}
+<br>
+[Most oversee functions such as personnel selection and performance evaluation, whereas few have oversight of benefits and compensation/incentives.]{.text-left}
+:::
+
+::: {.absolute left=500 top=90}
+![](images/hr_functions.png){fig-alt="data visualization showing how oversight of HR functions vary." width=110%}
+:::
+:::
+:::{.column width="5%"}
+:::
+::::
+
+
+
+

@@ -1,0 +1,134 @@
+# Background
+
+
+<!-- What is the Profile? -->
+
+##  {#profile-about data-menu-title="What is the Profile?"}
+
+[**Background** \| What is the Profile?]{.slide-header}
+
+<br> <br> <br> <br> [The ASTHO Profile of State and Territorial Public Health is a longitudinal census that began in 2007 and is fielded every three years to state and territorial health agencies with funding from CDC and RWJF.]{.text} <br> <br> <br> <br>
+
+![](images/profile_sections.png){.absolute fig-alt="Icons that represent the following program areas: Governance, Structure, Activities, Finance, Workforce, Planning and Quality Improvement, Healthy Equity, and Informatics" bottom="50" right="138" width="80%"}
+
+
+
+<!-- How is Profile Used? -->
+
+##  {#profile-uses data-menu-title="How is Profile Used?"}
+
+[**Background** \| How is the Profile Used?]{.slide-header}
+
+<br> <br> <br>
+
+::: columns
+::: {.column width="10%"}
+:::
+
+::: {.column width="40%"}
+![](images/uses_advocate.png){fig-alt="Advocate for funds"} <br>
+
+![](images/uses_onboard.png){fig-alt="Onboard senior leaders"}
+
+![](images/uses_trends.png){fig-alt="Track trends"}
+:::
+
+::: {.column width="40%"}
+![](images/uses_assessment.png){fig-alt="Use in needs assessment"} <br>
+
+![](images/uses_planning.png){fig-alt="Use for strategic planning"} <br>
+
+![](images/uses_benchmarking.png){fig-alt="Benchmarking"}
+:::
+
+::: {.column width="10%"}
+:::
+:::
+
+
+
+
+<!-- How we measure workforce -->
+
+##  {#profile-measurements data-menu-title="How Do We Measure Workforce?"}
+
+[**Background** \| How Do We Measure Workforce?]{.slide-header}
+
+<br> <br> <br>
+
+![](images/ftes.png){fig-alt="Text: FTEs. Image: Icon of three people with the number two underneath. Two people represent .5FTE and one represents 1.0FTE. .5FTE is vacant." width=31.2% .absolute left=10px top=175px}
+
+![](images/positions.png){fig-alt="Text: Positions. Image: Icon of two papers, one with a person inside (filled position) and one without a person inside (vacant)." width=26% .absolute left=480px top=200px} 
+
+![](images/employees.png){fig-alt="Text: employees. Image: Icon of two people with the number two underneath" width=20.3% .absolute left=930px top=200px} 
+
+
+
+##  {#profile-measurements-ftes data-menu-title="FTEs"}
+
+[**Background** \| How Do We Measure Workforce?]{.slide-header}
+
+<br> <br>
+
+
+::::{.columns}
+:::{.column width="40%"}
+![](images/ftes.png){fig-alt="Text: FTEs. Image: Icon of three people with the number two underneath. Two people represent .5FTE and one represents 1.0FTE. .5FTE is vacant." width=38% .absolute left=-15px top=165px} 
+:::
+:::{.column width="55%"}
+<br><br><br>
+[**The number of filled or vacant full-time equivalent positions (different from workers and positions)**.]{.text-sm} [<br><br> FTEs can include filled FTEs and vacant FTEs, which is a way to describe workforce capacity.]{.text-xsm}
+:::
+:::{.column width="5%"}
+:::
+::::
+
+
+
+##  {#profile-measurements-positions data-menu-title="Positions"}
+
+[**Background** \| How Do We Measure Workforce?]{.slide-header}
+
+<br> <br> <br>
+
+::::{.columns}
+:::{.column width="3%"}
+:::
+:::{.column width="34%"}
+![](images/positions.png){fig-alt="Text: Positions. Image: Icon of two papers, one with a person inside (filled position) and one without a person inside (vacant)." width=31.25% .absolute left=41px top=200px} 
+:::
+:::{.column width="3%"}
+:::
+
+:::{.column width="55%"}
+<br> <br>
+[**The number of actual positions (filled or vacant) within the agency/department.**]{.text-sm} [<br><br>One position may equal one FTE, but it may not. Two half-time positions, for example, equals one FTE.]{.text-xsm}
+:::
+:::{.column width="5%"}
+:::
+::::
+
+
+
+##  {#profile-measurements-employees data-menu-title="Employees"}
+
+[**Background** \| How Do We Measure Workforce?]{.slide-header}
+
+<br> <br> <br>
+
+::::{.columns}
+:::{.column width="6%"}
+:::
+:::{.column width="27%"}
+![](images/employees.png){fig-alt="Text: employees. Image: Icon of two people with the number two underneath" width=25% .absolute left=80px top=200px} 
+:::
+:::{.column width="7%"}
+:::
+:::{.column width="55%"}
+<br><br>
+[**The number of people working at the agency (also called a head count)**.]{.text-sm} [<br><br>One full-time employee (1FTE) might work in two positions, both at .5FTE.]{.text-xsm}
+:::
+:::{.column width="5%"}
+:::
+::::
+

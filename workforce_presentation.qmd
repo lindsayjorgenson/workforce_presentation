@@ -1,0 +1,44 @@
+---
+author: Lindsay Jorgenson
+engine: knitr
+logo: images/logo.png
+format:
+  revealjs: 
+    theme: [default, my_styles.scss]
+    hash-type: number
+    width: 1280
+    height: 720
+---
+
+##  {#workforce-presentation data-menu-title="Workforce Presentation" background-video="videos/telehealth.mp4" background-size="110%"}
+[What Should Workforce and HR Directors Know?]{.title} [Lindsay Jorgenson & Miriam Naiman-Sessions]{.subtitle} [*April 2024*]{.subtitle-sm}
+
+
+<!-- Insert R Scripts -->
+```{r}
+source("R/01-load.R")
+source("R/02-clean.R")
+source("R/03-func.R")
+```
+
+
+{{< include _01-background.qmd >}}
+
+{{< include _02-findings.qmd >}}
+
+{{< include _03-dash.qmd >}}
+
+{{< include _04-2025.qmd >}}
+
+##  {#references-notes data-menu-title="References and Notes"}
+
+[**Profile** \| References and Notes]{.slide-header}
+<br><br><br>
+
+::: {.absolute left=100px width="90%" style="color: #1b5380; font-size: .9em;"}
+1. Leider JP, Castrucci BC, Robins M, et al. "The Exodus Of State And Local Public Health Employees: Separations Started Before And Continued Throughout COVID-19.” Health Affairs. 2023;42(3):338-348. www.ncbi.nlm.nih.gov/pubmed/36877909. Accessed 10-4-2023.
+:::
+
+::: {.absolute left=400px top=450px width="90%" style="color: #C65227; font-size: 1.4em;"}
+<a href="mailto:profile@astho.org">profile@astho.org</a>
+:::
